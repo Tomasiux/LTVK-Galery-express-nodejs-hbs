@@ -1,0 +1,27 @@
+<p>Design by:
+    <a href="https://LTVK.LT">LTVK.LT</a>
+</p>
+</div>
+<div class="container text-center" style="">
+    <div class="row row-cols-12" style="">
+{{#if imageList.length}}
+    {{#each imageList}}
+<div class="col">
+   <button>
+        <img src="{{file}}" class="img-fluid" style="max-height: 150px;">
+        </button>
+        <button id="myButton" class="fa fa-heart btn-like" onclick="counter()" aria-hidden="true"></button>
+        <p class="btn-count">Likes: <a id="clicks" style="color: white">0</a></p>
+        <p class="text-sm">Patalpino: {{name}}</p>
+        <p class="text-sm">Įkelta: 2022-10-14</p>
+        </div>
+    {{/each}}
+{{/if}}
+</div>
+<script>
+    var clicks = 0;
+    function counter() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>

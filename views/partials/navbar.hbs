@@ -1,0 +1,22 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">PROGRAMAVIMAS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+            <li class="active"><a href="/">Pagrindinis</a></li>
+        {{else}}
+            <li><a href="/">Pagrindinis</a></li>
+        {{/if}}
+        {{#if isCats}}
+            <li class="active"><a href="/cats">Katinai</a></li>
+        {{else}}
+            <li><a href="/cats">Katinai</a></li>
+        {{/if}}
+        {{#if isCats}}
+            <li class="active"><a href="/galery">Galerija</a></li>
+        {{else}}
+            <li><a href="/galery">Galerija</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,7 @@
+<p>Cal List: where you are?</p>
+{{#if catList.length}}
+    <small># {{catList.length}}</small>
+    {{#each catList}}
+        <div><a href="/remove/{{name}}">{{name}}</a></div>
+    {{/each}}
+{{/if}}
